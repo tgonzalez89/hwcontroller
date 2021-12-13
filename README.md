@@ -4,7 +4,7 @@ Compile:
 
 `g++ main.cpp -o main -std=c++17 -lpthread -Wall -Wextra -pedantic`
 
-Run:
+Run: (in different terminals)
 
 `./main`
 
