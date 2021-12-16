@@ -80,6 +80,7 @@ public:
       return;
     }
 
+    set_run_state(true);
     while (get_run_state()) {
       memset(buffer, 0, buf_size);
       int error = recv(client_socket, buffer, buf_size, 0);

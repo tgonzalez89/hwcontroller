@@ -26,15 +26,13 @@ int main() {
   controller1.start();
   hw_sim2.start();
   controller2.start();
-  socket_server.start();
 
-  while (socket_server.get_run_state());
+  socket_server.run();
 
   hw_sim1.stop();
   controller1.stop();
   hw_sim2.stop();
   controller2.stop();
-  socket_server.stop();
 
   return 0;
 }
